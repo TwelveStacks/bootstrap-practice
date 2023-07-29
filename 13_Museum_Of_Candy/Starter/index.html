@@ -58,12 +58,68 @@
     </nav>
 
     <section class="container-fluid px-0">
-      <div class="row">
-        <div class="col-6">
-          MUSEUM OF CANDY
+      <div class="row align-items-center content">
+        <div class="col-lg-6">
+          <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
+            <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+            <h1 class="display-2">MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          </div>
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <img class="img-fluid" src="imgs/hand2.png" alt="donut hand">
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid px-0">
+      <!-- Row 1 -->
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="imgs/milk.png" alt="milk picture">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img src="imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem voluptates dignissimos ex nobis rem harum animi, odio nulla minus ipsum, eligendi adipisci doloribus, cumque modi non alias in rerum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="row align-items-center content">
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img src="imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem voluptates dignissimos ex nobis rem harum animi, odio nulla minus ipsum, eligendi adipisci doloribus, cumque modi non alias in rerum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="imgs/gumball.png" alt="gumball picture">
+        </div>
+      </div>
+      <!-- Row 3 -->
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="imgs/sprinkles.png" alt="sprinkles picture">
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>MUSEUM OF CANDY</h2>
+              <img src="imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem voluptates dignissimos ex nobis rem harum animi, odio nulla minus ipsum, eligendi adipisci doloribus, cumque modi non alias in rerum.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -84,5 +140,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $(document).scroll(function(){
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
